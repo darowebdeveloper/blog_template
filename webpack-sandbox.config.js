@@ -2,10 +2,10 @@ const currentTask = process.env.npm_lifecycle_event; //return dev or build npm r
 const path = require('path');
 // plugins
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
-  context: path.resolve(__dirname, 'twitter'),
+  context: path.resolve(__dirname, 'sandbox'),
   module: {
     rules: [
       {
@@ -35,22 +35,20 @@ const config = {
   ],
 };
 
-if (currentTask == 'dev-twitter') {
+if (currentTask == 'dev-sandbox') {
   config.entry = {
-    index: './index.js',
+    index: './scripts/index.js',
   };
   config.output = {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'twitter/dist'),
+    path: path.resolve(__dirname, 'sandbox/dist'),
     clean: {
       dry: true,
     },
   };
   config.devServer = {
-    contentBase: path.join(__dirname, 'twitter/dist'),
-    index: 'index.html',
-    // publicPath: 'twitter/dist',
-    host: '0.0.0.0',
+    contentBase: path.join(__dirname, 'sandbox/dist'),
+    index: 'sandbox.html',
     port: 9000,
   };
   config.mode = 'development';
@@ -66,36 +64,13 @@ if (currentTask == 'dev-twitter') {
       // use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
     }
   );
-}
-
-if (currentTask == 'build-twitter') {
-  config.entry = {
-    index: './index.js',
-  };
-  config.output = {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'twitter/dist'),
-    clean: {
-      dry: true,
-    },
-  };
-  config.mode = 'production';
-  config.module.rules.push(
-    {
-      test: /\.(css)$/,
-      use: [MiniCssExtractPlugin.loader, 'css-loader'],
-    },
-    {
-      test: /\.(scss)$/,
-      use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-    }
-  );
-  config.plugins.push(
-    new MiniCssExtractPlugin({
-      // filename: 'styles.[contenthash].css',
-      filename: 'styles.[chunkhash].css',
-    })
-  );
+  config.plugins = [
+    new HtmlWebpackPlugin({
+      filename: 'sandbox.html',
+      template: './pages/sandbox.html',
+      chunks: ['index'], // from entry name
+    }),
+  ];
 }
 
 module.exports = config;

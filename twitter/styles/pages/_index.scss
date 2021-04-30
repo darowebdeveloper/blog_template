@@ -5,54 +5,207 @@ body {
 .main-page {
   width: 100%;
   height: 100vh;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr min-content;
-}
-// left side
-.left {
-  grid-column: 1 / 2;
-  grid-row: 1/2;
-  background-color: #1aa1f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &-content__group {
+  // left side
+  & .left {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    background-color: #1aa1f5;
     display: flex;
+    justify-content: center;
     align-items: center;
-    color: #fff;
 
-    i {
-      font-size: 3rem;
-      margin-right: 2rem;
-    }
-    &__heading {
-      font-size: 2rem;
+    &-content__group {
+      display: flex;
+      align-items: center;
+      color: #fff;
+
+      i {
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+      &__heading {
+        font-size: 2rem;
+      }
     }
   }
+  // right
+  & .right {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+  }
+  // middle content
+  & .middle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  // footer
+  & .main-page-footer {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    background-color: $darker-grey-background;
+    padding: 1.5rem;
+    border-top: 0.1rem solid $darker-grey-border;
+  }
 }
-// right
-.right {
-  grid-column: 2 / 2;
-  grid-row: 1 / 2;
-  position: relative;
-}
-// middle content
-.middle-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-}
-// footer
-.main-page-footer {
-  grid-column: 1 / -1;
-  grid-row: 2 / -1;
-  background-color: $darker-grey-background;
-  padding: 1.5rem;
-  border-top: 0.1rem solid $darker-grey-border;
+
+// login page
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
+  grid-template-rows: repeat(2, min-content) 1fr;
+  gap: 1.5rem;
+
+  // login navigation
+  & .login-page-nav {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background-color: #fff;
+    padding: 2.5rem 0;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
+
+    ul {
+      width: 100rem;
+      margin: auto;
+      display: flex;
+      align-items: flex-end;
+      list-style: none;
+      & li {
+        margin: 0 1rem;
+        position: relative;
+      }
+      & li:last-child {
+        margin-left: auto;
+      }
+      & li:after {
+        content: '';
+        width: 100%;
+        height: 0.4rem;
+        background-color: $blue-color;
+        position: absolute;
+        bottom: -2.5rem;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      & li:hover a {
+        color: $blue-color;
+      }
+      & li:hover::after {
+        opacity: 1;
+      }
+    }
+    a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s;
+    }
+    i {
+      color: $blue-color;
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  // login
+  & .login {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #fff;
+    width: 100rem;
+    display: grid;
+    grid-template-columns: 10rem 8fr;
+    grid-template-rows: 2fr 1fr;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+
+    & .login-content {
+      grid-column: 2 / -1;
+      grid-row: 1 /2;
+      padding: 5rem 0 1rem 0;
+
+      h2 {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+      }
+
+      .login-form {
+        display: flex;
+        flex-direction: column;
+
+        input:not(.login-form-checkbox) {
+          width: 30rem;
+          height: 3.5rem;
+          margin-bottom: 1rem;
+          border: 0.1rem solid #ddd;
+          border-radius: 0.5rem;
+          padding-left: 1rem;
+          font-size: 1.5rem;
+          transition: background-color 0.3s;
+        }
+        input:focus {
+          background-color: $light-grey-background;
+        }
+        div {
+          margin-top: 2rem;
+        }
+        button {
+          padding: 1rem 1.5rem;
+          background-color: $blue-color;
+          color: #fff;
+          border-radius: 4rem;
+          border: 0.1rem solid $blue-color;
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-right: 1rem;
+          cursor: pointer;
+        }
+        label {
+          font-size: 1.6rem;
+          font-weight: lighter;
+          margin-right: 1rem;
+          cursor: pointer;
+        }
+        a {
+          text-decoration: none;
+          font-size: 1.6rem;
+          color: $blue-color;
+        }
+      }
+    }
+
+    & .login-footer {
+      grid-column: 1 / -1;
+      grid-row: 2 / -1;
+      background-color: $darker-grey-background;
+      padding-left: 10rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      margin-top: 2rem;
+
+      p {
+        font-size: 1.6rem;
+        font-weight: lighter;
+        margin: 0.5rem 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: $blue-color;
+      }
+    }
+  }
 }
