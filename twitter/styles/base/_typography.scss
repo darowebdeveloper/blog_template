@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=VT323&display=swap');
+* {
+  font-family: 'VT323', monospace;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+html {
+  font-size: 62.5%; // set the default font to 10px since default size is 16px
+}
+h1 {
+  font-size: 2.8rem;
+  line-height: 4rem;
+}
+h4 {
+  font-size: 2rem;
+}

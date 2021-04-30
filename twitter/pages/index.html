@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <!-- main page -->
+    <section class="main-page">
+      <!-- left side -->
+      <div class="left">
+        <div class="left-content">
+          <div class="left-content__group m-4">
+            <i class="fas fa-search"></i>
+            <h3 class="left-content__group__heading">Find your interest</h3>
+          </div>
+          <div class="left-content__group m-4">
+            <i class="fas fa-user-friends"></i>
+            <h3 class="left-content__group__heading">
+              Explore what people are talking about
+            </h3>
+          </div>
+          <div class="left-content__group m-4">
+            <i class="fas fa-comment"></i>
+            <h3 class="left-content__group__heading">Join the peopel</h3>
+          </div>
+        </div>
+      </div>
+      <!-- end of left side -->
+      <!-- right side -->
+      <div class="right">
+        <form action="" class="form--inline m-t-3">
+          <input
+            type="text"
+            class="form--inline__input m-r-1"
+            placeholder="Phone, email, or username"
+          />
+          <div class="form--inline__group">
+            <input
+              type="password"
+              placeholder="Password"
+              class="form--inline__input m-r-1"
+            />
+            <label for="">Forgot password?</label>
+          </div>
+          <button type="button" class="btn btn--top">Log in</button>
+        </form>
+        <div class="middle-content">
+          <i class="fas fa-dove logo--blue"></i>
+          <h1 class="m-b-4">Expore what's happening in the world</h1>
+          <h4 class="m-b-2">Join Twitter today</h4>
+          <button type="button" class="btn btn--sign-up m-y-08">Sign up</button>
+          <button type="button" class="btn btn--log-in">Log in</button>
+        </div>
+      </div>
+      <!-- end of right side -->
+      <!-- footer -->
+      <footer class="main-page-footer">
+        <ul class="navigation--bottom">
+          <li><a class="navigation--bottom__items" href="#">About</a></li>
+          <li><a class="navigation--bottom__items" href="#">Blog</a></li>
+          <li><a class="navigation--bottom__items" href="#">Help</a></li>
+          <li><a class="navigation--bottom__items" href="#">Terms</a></li>
+          <li><a class="navigation--bottom__items" href="#">Apps</a></li>
+          <li><a class="navigation--bottom__items" href="#">Settings</a></li>
+          <li><a class="navigation--bottom__items" href="#">Contact</a></li>
+          <li><a class="navigation--bottom__items" href="#">Status</a></li>
+          <li>
+            <a class="navigation--bottom__items" href="#">Privacy Policy</a>
+          </li>
+          <li><a class="navigation--bottom__items" href="#">Brand</a></li>
+          <li><a class="navigation--bottom__items" href="#">Developers</a></li>
+          <li>
+            <a class="navigation--bottom__items" href="#"
+              >&copy; 2021 Twitter</a
+            >
+          </li>
+        </ul>
+      </footer>
+      <!-- end of footer -->
+    </section>
+    <!-- end of main page -->
+  </body>
+</html>

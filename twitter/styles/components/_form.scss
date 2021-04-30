@@ -1,0 +1,29 @@
+.form--inline {
+  display: flex;
+  justify-content: center;
+  position: elative;
+  &__input {
+    width: 20rem;
+    height: 4.5rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    border: 0.1rem solid $darker-grey-border;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transition: background-color 0.3s;
+    &:focus {
+      background-color: $darker-grey-background;
+    }
+  }
+  &__group {
+    position: relative;
+    label {
+      position: absolute;
+      top: 5.5rem;
+      left: 0;
+      font-size: 1.6rem;
+      font-weight: lighter;
+      color: #a7a6a6;
+    }
+  }
+}

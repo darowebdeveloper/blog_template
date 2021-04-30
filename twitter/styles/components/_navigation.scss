@@ -1,0 +1,12 @@
+.navigation--bottom {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  &__items {
+    font-size: 1.6rem;
+    margin: 0 2rem;
+    text-decoration: none;
+    color: #444;
+    font-weight: lighter;
+  }
+}
