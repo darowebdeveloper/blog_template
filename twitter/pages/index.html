@@ -86,34 +86,40 @@
     <!-- login page -->
     <section class="login-page">
       <!-- login page navigation -->
-      <nav class="login-page-nav">
-        <ul>
-          <li>
-            <a href="#"><i class="fas fa-dove"></i>Home</a>
+      <nav class="navigation--top">
+        <ul class="navigation--top__list">
+          <li class="navigation--top__list__items m-x-1">
+            <a href="#"><i class="fas fa-dove m-r-05"></i>Home</a>
           </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Language: English</a></li>
+          <li class="navigation--top__list__items"><a href="#">About</a></li>
+          <li class="navigation--top__list__items">
+            <a href="#">Language: English</a>
+          </li>
         </ul>
       </nav>
       <!-- end of login page navigation -->
       <!-- login -->
-      <div class="login">
-        <div class="login-content">
-          <h2>Log in sfto Twitter</h2>
-          <form action="" class="login-form">
-            <input type="text" placeholder="Phone, email, or username" />
-            <input type="password" placeholder="Password" />
-            <div>
-              <button class="login-form-btn">Log in</button>
+      <div class="login-card">
+        <div class="login-card__content">
+          <h2 class="m-b-3">Log into Twitter</h2>
+          <form action="" class="login-card__form">
+            <input
+              class="m-b-1"
+              type="text"
+              placeholder="Phone, email, or username"
+            />
+            <input class="m-b-1" type="password" placeholder="Password" />
+            <div class="m-t-2">
+              <button class="login-form-btn m-r-1">Log in</button>
               <input type="checkbox" class="login-form-checkbox" id="check" />
-              <label for="check">Remember me</label>
+              <label for="check" class="m-r-1">Remember me</label>
               <a href="#">Forget password?</a>
             </div>
           </form>
         </div>
-        <footer class="login-footer">
-          <p>New to Twitter? <a href="#">Sign up now</a></p>
-          <p>
+        <footer class="login-card__footer m-t-2">
+          <p class="m-y-05">New to Twitter? <a href="#">Sign up now</a></p>
+          <p class="m-y-05">
             Already using Twitter via text message?
             <a href="#">Activate your account</a>
           </p>

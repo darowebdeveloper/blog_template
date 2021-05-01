@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
   context: path.resolve(__dirname, 'twitter'),
+  target: 'web',
   module: {
     rules: [
       {

@@ -1,3 +1,53 @@
+.navigation--top {
+  background-color: #fff;
+  padding: 2.5rem 0;
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
+
+  &__list {
+    width: 100rem;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+
+    &__items {
+      position: relative;
+
+      &:last-child {
+        margin-left: auto;
+      }
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: 0.4rem;
+        background-color: $blue-color;
+        position: absolute;
+        bottom: -2.5rem;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      &:hover a {
+        color: $blue-color;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+      a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: #555;
+        transition: color 0.3s;
+      }
+      i {
+        color: $blue-color;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
 .navigation--bottom {
   display: flex;
   justify-content: center;

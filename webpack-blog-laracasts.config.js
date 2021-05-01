@@ -20,6 +20,10 @@ module.exports = (env) => {
           type: 'asset/resource',
         },
         {
+          test: /\.html$/i,
+          loader: 'html-loader',
+        },
+        {
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
@@ -54,7 +58,7 @@ module.exports = (env) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: '[name].css',
+        filename: './styles/[name].css',
       }),
       new HtmlWebpackPlugin({
         title: 'Development',
@@ -65,13 +69,15 @@ module.exports = (env) => {
       contentBase: path.join(__dirname, 'blog_laracasts/dist'),
       port: 9000,
       host: '0.0.0.0',
+      // publicPath: 'http://localhost:9000/',
     },
     // error with browserslist
     target: 'web', // https://stackoverflow.com/a/66157895
     output: {
       path: path.resolve(__dirname, 'blog_laracasts/dist'),
       // publicPath: '/dist',
-      filename: '[name].bundle.js',
+      filename: './scripts/[name].bundle.js',
+      assetModuleFilename: 'images/[hash][ext][query]',
       clean: true,
     },
     optimization: {
