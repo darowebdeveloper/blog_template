@@ -14,6 +14,10 @@ const config = {
         type: 'asset/resource',
       },
       {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: {

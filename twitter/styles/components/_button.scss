@@ -32,3 +32,25 @@
     }
   }
 }
+.btn-post {
+  position: fixed;
+  bottom: 2rem;
+  left: 68%;
+
+  width: 12rem;
+  padding: 1.5rem;
+  background-color: $blue-color;
+  color: #fff;
+  font-size: 2rem;
+  border: 0.1rem solid $blue-color;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  i {
+    margin-right: 1rem;
+  }
+  &:hover {
+    background-color: $dark-blue-color;
+  }
+}

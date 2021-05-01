@@ -1,3 +1,78 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 6.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
+
+  &__icons {
+    display: flex;
+    align-items: center;
+
+    & a {
+      text-decoration: none;
+      margin-right: 7rem;
+      font-size: 2.5rem;
+      color: #9e9e9e;
+    }
+    & .active {
+      color: $blue-color;
+    }
+  }
+  &__search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .search-bar-input {
+      width: 35rem;
+      height: 3rem;
+      border: 0.1rem solid #d6e1e9;
+      border-radius: 3rem;
+      background-color: $light-grey-background;
+      padding-left: 5rem;
+      transition: all 0.3s;
+      &:focus {
+        background-color: #fff;
+        border-color: $blue-color;
+      }
+    }
+    i {
+      position: absolute;
+      font-size: 1.6rem;
+      left: 1.5rem;
+      color: #9e9a9a;
+    }
+  }
+  &__user {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    & i {
+      color: #444;
+      font-size: 1.6rem;
+    }
+  }
+  &__user-link {
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #444;
+  }
+
+  &__user-img-wrapper {
+    width: 4rem;
+    height: 4rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
 .navigation--top {
   background-color: #fff;
   padding: 2.5rem 0;
