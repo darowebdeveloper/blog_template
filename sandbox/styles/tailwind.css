@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+/* Add utilities into another file for quick compiling time */
+/* @tailwind utilities;  */
+
+@layer components {
+  .btn {
+    @apply inline-block rounded-lg px-5 py-3 focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;
+  }
+  .btn-primary {
+    @apply bg-brand hover:bg-brand-light  focus:ring-brand-dark focus:ring-opacity-50 active:bg-brand-dark  text-white;
+  }
+  .btn-secondary {
+    @apply bg-gray-300 hover:bg-gray-200  focus:ring-gray-500 focus:ring-opacity-50 active:bg-gray-400  text-gray-800;
+  }
+}

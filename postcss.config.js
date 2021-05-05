@@ -7,6 +7,7 @@ module.exports = ({ env }) => {
   if (env == 'production') {
     return {
       plugins: {
+        tailwindcss: {},
         autoprefixer: {},
         cssnano: {},
       },
@@ -14,8 +15,13 @@ module.exports = ({ env }) => {
   } else {
     return {
       plugins: {
+        tailwindcss: {},
         autoprefixer: {},
       },
+      // plugins: [
+      //   require('tailwindcss')('./tailwind.config.js'),
+      //   require('autoprefixer'),
+      // ],
     };
   }
 };
