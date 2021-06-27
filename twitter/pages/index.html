@@ -1,361 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="#" />
-    <title>Twitter</title>
-  </head>
-  <body>
-    <!-- main page -->
-    <section class="main-page">
-      <!-- left side -->
-      <div class="left">
-        <div class="left-content">
-          <div class="left-content__group m-4">
-            <i class="fas fa-search"></i>
-            <h3 class="left-content__group__heading">Find your interest</h3>
-          </div>
-          <div class="left-content__group m-4">
-            <i class="fas fa-user-friends"></i>
-            <h3 class="left-content__group__heading">
-              Explore what people are talking about
-            </h3>
-          </div>
-          <div class="left-content__group m-4">
-            <i class="fas fa-comment"></i>
-            <h3 class="left-content__group__heading">Join the peopel</h3>
-          </div>
-        </div>
-      </div>
-      <!-- end of left side -->
-      <!-- right side -->
-      <div class="right">
-        <form action="" class="form--inline m-t-3">
-          <input
-            type="text"
-            class="form--inline__input m-r-1"
-            placeholder="Phone, email, or username"
-          />
-          <div class="form--inline__group">
-            <input
-              type="password"
-              placeholder="Password"
-              class="form--inline__input m-r-1"
-            />
-            <label for="">Forgot password?</label>
-          </div>
-          <button type="button" class="btn btn--top">Log in</button>
-        </form>
-        <div class="middle-content">
-          <i class="fas fa-dove logo--blue"></i>
-          <h1 class="m-b-4">Expore what's happening in the world</h1>
-          <h4 class="m-b-2">Join Twitter today</h4>
-          <button type="button" class="btn btn--sign-up m-y-08">Sign up</button>
-          <button type="button" class="btn btn--log-in">Log in</button>
-        </div>
-      </div>
-      <!-- end of right side -->
-      <!-- footer -->
-      <footer class="main-page-footer">
-        <ul class="navigation--bottom">
-          <li><a class="navigation--bottom__items" href="#">About</a></li>
-          <li><a class="navigation--bottom__items" href="#">Blog</a></li>
-          <li><a class="navigation--bottom__items" href="#">Help</a></li>
-          <li><a class="navigation--bottom__items" href="#">Terms</a></li>
-          <li><a class="navigation--bottom__items" href="#">Apps</a></li>
-          <li><a class="navigation--bottom__items" href="#">Settings</a></li>
-          <li><a class="navigation--bottom__items" href="#">Contact</a></li>
-          <li><a class="navigation--bottom__items" href="#">Status</a></li>
-          <li>
-            <a class="navigation--bottom__items" href="#">Privacy Policy</a>
-          </li>
-          <li><a class="navigation--bottom__items" href="#">Brand</a></li>
-          <li><a class="navigation--bottom__items" href="#">Developers</a></li>
-          <li>
-            <a class="navigation--bottom__items" href="#"
-              >&copy; 2021 Twitter</a
-            >
-          </li>
-        </ul>
-      </footer>
-      <!-- end of footer -->
-    </section>
-    <!-- end of main page -->
-    <!-- login page -->
-    <section class="login-page">
-      <!-- login page navigation -->
-      <nav class="navigation--top">
-        <ul class="navigation--top__list">
-          <li class="navigation--top__list__items m-x-1">
-            <a href="#"><i class="fas fa-dove m-r-05"></i>Home</a>
-          </li>
-          <li class="navigation--top__list__items"><a href="#">About</a></li>
-          <li class="navigation--top__list__items">
-            <a href="#">Language: English</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- end of login page navigation -->
-      <!-- login -->
-      <div class="login-card">
-        <div class="login-card__content">
-          <h2 class="m-b-3">Log into Twitter</h2>
-          <form action="" class="login-card__form">
-            <input
-              class="m-b-1"
-              type="text"
-              placeholder="Phone, email, or username"
-            />
-            <input class="m-b-1" type="password" placeholder="Password" />
-            <div class="m-t-2">
-              <button class="login-form-btn m-r-1">Log in</button>
-              <input type="checkbox" class="login-form-checkbox" id="check" />
-              <label for="check" class="m-r-1">Remember me</label>
-              <a href="#">Forget password?</a>
-            </div>
-          </form>
-        </div>
-        <footer class="login-card__footer m-t-2">
-          <p class="m-y-05">New to Twitter? <a href="#">Sign up now</a></p>
-          <p class="m-y-05">
-            Already using Twitter via text message?
-            <a href="#">Activate your account</a>
-          </p>
-        </footer>
-      </div>
-    </section>
-    <!-- end of login page -->
 
-    <!-- feeds page -->
-    <section class="feeds-page">
-      <!-- feeds navigation -->
-      <nav class="navigation">
-        <div class="navigation__icons">
-          <a href="#" class="active"><i class="fas fa-home"></i></a>
-          <a href="#"><i class="fas fa-hashtag"></i></a>
-          <a href=""><i class="far fa-bell"></i></a>
-          <a href=""><i class="far fa-envelope"></i></a>
-        </div>
-        <div class="navigation__search-bar">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="#" />
+  <title>Twitter</title>
+</head>
+
+<body>
+  <!-- main page -->
+  <section class="main-page">
+    <!-- left side -->
+    <div class="left">
+      <div class="left-content">
+        <div class="left-content__group m-4">
           <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search" class="search-bar-input" />
+          <h3 class="left-content__group__heading">Find your interest</h3>
         </div>
-        <div class="navigation__user">
-          <div class="navigation__user-img-wrapper">
+        <div class="left-content__group m-4">
+          <i class="fas fa-user-friends"></i>
+          <h3 class="left-content__group__heading">
+            Explore what people are talking about
+          </h3>
+        </div>
+        <div class="left-content__group m-4">
+          <i class="fas fa-comment"></i>
+          <h3 class="left-content__group__heading">Join the peopel</h3>
+        </div>
+      </div>
+    </div>
+    <!-- end of left side -->
+    <!-- right side -->
+    <div class="right">
+      <form action="" class="form--inline m-t-3">
+        <input type="text" class="form--inline__input m-r-1" placeholder="Phone, email, or username" />
+        <div class="form--inline__group">
+          <input type="password" placeholder="Password" class="form--inline__input m-r-1" />
+          <label for="">Forgot password?</label>
+        </div>
+        <button type="button" class="btn btn--top">Log in</button>
+      </form>
+      <div class="middle-content">
+        <i class="fas fa-dove logo--blue"></i>
+        <h1 class="m-b-4">Expore what's happening in the world</h1>
+        <h4 class="m-b-2">Join Twitter today</h4>
+        <button type="button" class="btn btn--sign-up m-y-08">Sign up</button>
+        <button type="button" class="btn btn--log-in">Log in</button>
+      </div>
+    </div>
+    <!-- end of right side -->
+    <!-- footer -->
+    <footer class="main-page-footer">
+      <ul class="navigation--bottom">
+        <li><a class="navigation--bottom__items" href="#">About</a></li>
+        <li><a class="navigation--bottom__items" href="#">Blog</a></li>
+        <li><a class="navigation--bottom__items" href="#">Help</a></li>
+        <li><a class="navigation--bottom__items" href="#">Terms</a></li>
+        <li><a class="navigation--bottom__items" href="#">Apps</a></li>
+        <li><a class="navigation--bottom__items" href="#">Settings</a></li>
+        <li><a class="navigation--bottom__items" href="#">Contact</a></li>
+        <li><a class="navigation--bottom__items" href="#">Status</a></li>
+        <li>
+          <a class="navigation--bottom__items" href="#">Privacy Policy</a>
+        </li>
+        <li><a class="navigation--bottom__items" href="#">Brand</a></li>
+        <li><a class="navigation--bottom__items" href="#">Developers</a></li>
+        <li>
+          <a class="navigation--bottom__items" href="#">&copy; 2021 Twitter</a>
+        </li>
+      </ul>
+    </footer>
+    <!-- end of footer -->
+  </section>
+  <!-- end of main page -->
+  <!-- login page -->
+  <section class="login-page">
+    <!-- login page navigation -->
+    <nav class="navigation--top">
+      <ul class="navigation--top__list">
+        <li class="navigation--top__list__items m-x-1">
+          <a href="#"><i class="fas fa-dove m-r-05"></i>Home2</a>
+        </li>
+        <li class="navigation--top__list__items"><a href="#">About</a></li>
+        <li class="navigation--top__list__items">
+          <a href="#">Language: English</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of login page navigation -->
+    <!-- login -->
+    <div class="login-card">
+      <div class="login-card__content">
+        <h2 class="m-b-3">Log into Twitter</h2>
+        <form action="" class="login-card__form">
+          <input class="m-b-1" type="text" placeholder="Phone, email, or username" />
+          <input class="m-b-1" type="password" placeholder="Password" />
+          <div class="m-t-2">
+            <button class="login-form-btn m-r-1">Log in</button>
+            <input type="checkbox" class="login-form-checkbox" id="check" />
+            <label for="check" class="m-r-1">Remember me</label>
+            <a href="#">Forget password?</a>
+          </div>
+        </form>
+      </div>
+      <footer class="login-card__footer m-t-2">
+        <p class="m-y-05">New to Twitter? <a href="#">Sign up now</a></p>
+        <p class="m-y-05">
+          Already using Twitter via text message?
+          <a href="#">Activate your account</a>
+        </p>
+      </footer>
+    </div>
+  </section>
+  <!-- end of login page -->
+
+  <!-- feeds page -->
+  <section class="feeds-page">
+    <!-- feeds navigation -->
+    <nav class="navigation">
+      <div class="navigation__icons">
+        <a href="#" class="active"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-hashtag"></i></a>
+        <a href=""><i class="far fa-bell"></i></a>
+        <a href=""><i class="far fa-envelope"></i></a>
+      </div>
+      <div class="navigation__search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search" class="search-bar-input" />
+      </div>
+      <div class="navigation__user">
+        <div class="navigation__user-img-wrapper">
+          <img src="../images/user1.jpg" alt="Jane Smith" />
+        </div>
+        <a href="#" class="navigation__user-link">Jane Smith</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </nav>
+    <!-- end of feeds navigation -->
+    <!-- feeds content -->
+    <div class="feeds-content">
+      <div class="feeds-header">
+        <div class="feeds-header__top">
+          <h4>Home</h4>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="feeds-header__post">
+          <div class="feeds-header__img-wrapper">
             <img src="../images/user1.jpg" alt="Jane Smith" />
           </div>
-          <a href="#" class="navigation__user-link">Jane Smith</a>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-      </nav>
-      <!-- end of feeds navigation -->
-      <!-- feeds content -->
-      <div class="feeds-content">
-        <div class="feeds-header">
-          <div class="feeds-header__top">
-            <h4>Home</h4>
-            <i class="far fa-star"></i>
-          </div>
-          <div class="feeds-header__post">
-            <div class="feeds-header__img-wrapper">
-              <img src="../images/user1.jpg" alt="Jane Smith" />
-            </div>
-            <input type="text" placeholder="What's happening?" />
-            <i class="far fa-image"></i>
-            <i class="fas fa-camera"></i>
-            <i class="far fa-chart-bar"></i>
-          </div>
-        </div>
-        <div class="feeds-posts">
-          <div class="feeds-post">
-            <div class="feeds-post__user-avatar">
-              <img src="../images/user2.jpg" alt="Helen Brown" />
-            </div>
-            <div class="feeds-post__content">
-              <div class="feeds-post__user-info">
-                <h4>Helen Brown</h4>
-                <i class="fas fa-check-circle"></i>
-                <span>@helenbrown 15 min</span>
-              </div>
-              <p class="feeds-post__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                repellat soluta doloremque corrupti voluptas at pariatur, a
-                dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
-                similique quos expedita necessitatibus minima fugiat!
-              </p>
-              <div class="feeds-post__img">
-                <img src="../images/post-img-1.jpg" alt="Mountain" />
-              </div>
-              <div class="feeds-post__icons">
-                <i class="far fa-comment"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-              </div>
-            </div>
-          </div>
-          <div class="feeds-post">
-            <div class="feeds-post__user-avatar">
-              <img src="../images/user3.jpg" alt="Mary Smith" />
-            </div>
-            <div class="feeds-post__content">
-              <div class="feeds-post__user-info">
-                <h4>Mary Smith</h4>
-                <i class="fas fa-check-circle"></i>
-                <span>@helenbrown 15 min</span>
-              </div>
-              <p class="feeds-post__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                repellat soluta doloremque corrupti voluptas at pariatur, a
-                dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
-                similique quos expedita necessitatibus minima fugiat!
-              </p>
-              <div class="feeds-post__img">
-                <img src="../images/post-img-2.jpg" alt="Mountain" />
-              </div>
-              <div class="feeds-post__icons">
-                <i class="far fa-comment"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-              </div>
-            </div>
-          </div>
-          <div class="feeds-post">
-            <div class="feeds-post__user-avatar">
-              <img src="../images/user4.jpg" alt="David Batista" />
-            </div>
-            <div class="feeds-post__content">
-              <div class="feeds-post__user-info">
-                <h4>David Batista</h4>
-                <i class="fas fa-check-circle"></i>
-                <span>@helenbrown 15 min</span>
-              </div>
-              <p class="feeds-post__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                repellat soluta doloremque corrupti voluptas at pariatur, a
-                dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
-                similique quos expedita necessitatibus minima fugiat!
-              </p>
-              <div class="feeds-post__img">
-                <img src="../images/post-img-3.jpg" alt="Mountain" />
-              </div>
-              <div class="feeds-post__icons">
-                <i class="far fa-comment"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-              </div>
-            </div>
-          </div>
-          <div class="feeds-post">
-            <div class="feeds-post__user-avatar">
-              <img src="../images/user5.jpg" alt="Jeremy Brown" />
-            </div>
-            <div class="feeds-post__content">
-              <div class="feeds-post__user-info">
-                <h4>Jeremy Brown</h4>
-                <i class="fas fa-check-circle"></i>
-                <span>@helenbrown 15 min</span>
-              </div>
-              <p class="feeds-post__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                repellat soluta doloremque corrupti voluptas at pariatur, a
-                dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
-                similique quos expedita necessitatibus minima fugiat!
-              </p>
-              <div class="feeds-post__img">
-                <img src="../images/post-img-4.jpg" alt="Mountain" />
-              </div>
-              <div class="feeds-post__icons">
-                <i class="far fa-comment"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-              </div>
-            </div>
-          </div>
-          <div class="feeds-post">
-            <div class="feeds-post__user-avatar">
-              <img src="../images/user6.jpg" alt="Jonh Cena" />
-            </div>
-            <div class="feeds-post__content">
-              <div class="feeds-post__user-info">
-                <h4>Jonh Cena</h4>
-                <i class="fas fa-check-circle"></i>
-                <span>@helenbrown 15 min</span>
-              </div>
-              <p class="feeds-post__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                repellat soluta doloremque corrupti voluptas at pariatur, a
-                dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
-                similique quos expedita necessitatibus minima fugiat!
-              </p>
-              <div class="feeds-post__img">
-                <img src="../images/post-img-5.jpg" alt="Mountain" />
-              </div>
-              <div class="feeds-post__icons">
-                <i class="far fa-comment"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="follow">
-          <h3 class="follow__heading">Who to follow</h3>
-          <div class="follow__user">
-            <div class="follow__user-img">
-              <img src="../images/user3.jpg" />
-            </div>
-            <div class="follow__user-info">
-              <h4>Ann Smith</h4>
-              <p>@annsmith</p>
-            </div>
-            <button type="button" class="follow-btn">Follow</button>
-          </div>
-          <div class="follow__user">
-            <div class="follow__user-img">
-              <img src="../images/user4.jpg" />
-            </div>
-            <div class="follow__user-info">
-              <h4>James Black</h4>
-              <p>@jamesblack</p>
-            </div>
-            <button type="button" class="follow-btn">Follow</button>
-          </div>
-          <div class="follow__user">
-            <div class="follow__user-img">
-              <img src="../images/user5.jpg" />
-            </div>
-            <div class="follow__user-info">
-              <h4>Mary Smith</h4>
-              <p>@marysmith</p>
-            </div>
-            <button type="button" class="follow-btn">Follow</button>
-          </div>
-          <div class="follow__link">
-            <a href="#">Show more</a>
-          </div>
-          <footer class="follow__footer">
-            <ul>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy policy</a></li>
-              <li><a href="#">Cookies</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">More</a></li>
-            </ul>
-          </footer>
+          <input type="text" placeholder="What's happening?" />
+          <i class="far fa-image"></i>
+          <i class="fas fa-camera"></i>
+          <i class="far fa-chart-bar"></i>
         </div>
       </div>
-      <!-- end of feeds content -->
-      <button type="button" class="btn-post">
-        +<i class="fas fa-feather-alt"></i>Post
-      </button>
-    </section>
-    <!-- end of feeds page -->
-  </body>
+      <div class="feeds-posts">
+        <div class="feeds-post">
+          <div class="feeds-post__user-avatar">
+            <img src="../images/user2.jpg" alt="Helen Brown" />
+          </div>
+          <div class="feeds-post__content">
+            <div class="feeds-post__user-info">
+              <h4>Helen Brown</h4>
+              <i class="fas fa-check-circle"></i>
+              <span>@helenbrown 15 min</span>
+            </div>
+            <p class="feeds-post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              repellat soluta doloremque corrupti voluptas at pariatur, a
+              dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
+              similique quos expedita necessitatibus minima fugiat!
+            </p>
+            <div class="feeds-post__img">
+              <img src="../images/post-img-1.jpg" alt="Mountain" />
+            </div>
+            <div class="feeds-post__icons">
+              <i class="far fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="feeds-post">
+          <div class="feeds-post__user-avatar">
+            <img src="../images/user3.jpg" alt="Mary Smith" />
+          </div>
+          <div class="feeds-post__content">
+            <div class="feeds-post__user-info">
+              <h4>Mary Smith</h4>
+              <i class="fas fa-check-circle"></i>
+              <span>@helenbrown 15 min</span>
+            </div>
+            <p class="feeds-post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              repellat soluta doloremque corrupti voluptas at pariatur, a
+              dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
+              similique quos expedita necessitatibus minima fugiat!
+            </p>
+            <div class="feeds-post__img">
+              <img src="../images/post-img-2.jpg" alt="Mountain" />
+            </div>
+            <div class="feeds-post__icons">
+              <i class="far fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="feeds-post">
+          <div class="feeds-post__user-avatar">
+            <img src="../images/user4.jpg" alt="David Batista" />
+          </div>
+          <div class="feeds-post__content">
+            <div class="feeds-post__user-info">
+              <h4>David Batista</h4>
+              <i class="fas fa-check-circle"></i>
+              <span>@helenbrown 15 min</span>
+            </div>
+            <p class="feeds-post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              repellat soluta doloremque corrupti voluptas at pariatur, a
+              dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
+              similique quos expedita necessitatibus minima fugiat!
+            </p>
+            <div class="feeds-post__img">
+              <img src="../images/post-img-3.jpg" alt="Mountain" />
+            </div>
+            <div class="feeds-post__icons">
+              <i class="far fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="feeds-post">
+          <div class="feeds-post__user-avatar">
+            <img src="../images/user5.jpg" alt="Jeremy Brown" />
+          </div>
+          <div class="feeds-post__content">
+            <div class="feeds-post__user-info">
+              <h4>Jeremy Brown</h4>
+              <i class="fas fa-check-circle"></i>
+              <span>@helenbrown 15 min</span>
+            </div>
+            <p class="feeds-post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              repellat soluta doloremque corrupti voluptas at pariatur, a
+              dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
+              similique quos expedita necessitatibus minima fugiat!
+            </p>
+            <div class="feeds-post__img">
+              <img src="../images/post-img-4.jpg" alt="Mountain" />
+            </div>
+            <div class="feeds-post__icons">
+              <i class="far fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="feeds-post">
+          <div class="feeds-post__user-avatar">
+            <img src="../images/user6.jpg" alt="Jonh Cena" />
+          </div>
+          <div class="feeds-post__content">
+            <div class="feeds-post__user-info">
+              <h4>Jonh Cena</h4>
+              <i class="fas fa-check-circle"></i>
+              <span>@helenbrown 15 min</span>
+            </div>
+            <p class="feeds-post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              repellat soluta doloremque corrupti voluptas at pariatur, a
+              dolores corporis laudantium tenetur perspiciatis nostrum! Earum,
+              similique quos expedita necessitatibus minima fugiat!
+            </p>
+            <div class="feeds-post__img">
+              <img src="../images/post-img-5.jpg" alt="Mountain" />
+            </div>
+            <div class="feeds-post__icons">
+              <i class="far fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="follow">
+        <h3 class="follow__heading">Who to follow</h3>
+        <div class="follow__user">
+          <div class="follow__user-img">
+            <img src="../images/user3.jpg" />
+          </div>
+          <div class="follow__user-info">
+            <h4>Ann Smith</h4>
+            <p>@annsmith</p>
+          </div>
+          <button type="button" class="follow-btn">Follow</button>
+        </div>
+        <div class="follow__user">
+          <div class="follow__user-img">
+            <img src="../images/user4.jpg" />
+          </div>
+          <div class="follow__user-info">
+            <h4>James Black</h4>
+            <p>@jamesblack</p>
+          </div>
+          <button type="button" class="follow-btn">Follow</button>
+        </div>
+        <div class="follow__user">
+          <div class="follow__user-img">
+            <img src="../images/user5.jpg" />
+          </div>
+          <div class="follow__user-info">
+            <h4>Mary Smith</h4>
+            <p>@marysmith</p>
+          </div>
+          <button type="button" class="follow-btn">Follow</button>
+        </div>
+        <div class="follow__link">
+          <a href="#">Show more</a>
+        </div>
+        <footer class="follow__footer">
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <!-- end of feeds content -->
+    <button type="button" class="btn-post">
+      +<i class="fas fa-feather-alt"></i>Post
+    </button>
+  </section>
+  <!-- end of feeds page -->
+</body>
+
 </html>
